@@ -1,0 +1,174 @@
+/* 홈페이지 전체적인 스타일 */
+
+
+text{
+  font-family: 'Gowun Batang', serif;
+}
+
+h2{
+  font-family: 'Gowun Batang', serif;
+  font-size: 30px;
+}
+
+p{
+  font-family: 'Gowun Batang', serif;
+  font-size: 20px;
+}
+
+h3{
+  font-family: 'Gowun Batang', serif;
+  font-size: 23px;
+}
+
+a{
+  font-family: 'Gowun Batang', serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body{
+  background-color: aliceblue;
+}
+
+td{
+  font-family: 'Gowun Batang', serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:visible ;
+  color: rgb(111, 138, 125);
+  background-color: #334f3f82;
+  position: sticky;
+  top:0px;
+
+} 
+
+li {
+  display: inline-block;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  padding: 14px 16px;
+  color: rgb(15, 57, 48);
+  text-align: center;
+  text-decoration: none;
+}
+
+.school{
+  border: 1px solid;
+  font-size: 34px;
+  padding: 1em;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(21, 122, 82);
+}
+.dropdown-content {
+  display: none; 
+  position: absolute;   
+  background-color: rgb(53, 101, 53);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(18, 0, 0, 0.2);
+  z-index: 1; 
+           
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; 
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgb(72, 139, 99);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 슬라이드쇼 스타일구현 */
+
+*{box-sizing: border-box;}
+
+.mySlide {display: none ;} /*이미지 숨기는 용도*/
+
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.left, .right{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -24px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 1.0s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.right{right: 0; border-radius: 10px 0 0 10px;}
+
+.left:hover, .right:hover{
+  background-color: aqua;
+}
+
+.text{
+  color: aliceblue;
+  font-size: 15px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext{
+  color: aliceblue;
+  font-size: 15px;
+  padding: 10px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot{
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  background-color: beige;
+  display: inline-block;
+  transition: background-color 1s ease;
+  border-radius: 50%;
+}
+
+.active, .dot:hover {
+  background-color: antiquewhite;
+}
+
+.fade { /*페이드 효과*/
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

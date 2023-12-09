@@ -1,11 +1,36 @@
 /* 홈페이지 전체적인 스타일 */
+
+text{
+  font-family: 'Gowun Batang', serif;
+}
+
+body{
+  background-color: aliceblue;
+}
+
+h2{
+  font-family: 'Gowun Batang', serif;
+  font-size: 20px;
+}
+
+p{
+  font-family: 'Gowun Batang', serif;
+  font-size: 1em;
+}
+
+a{
+  font-family: 'Gowun Batang', serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: visible;  
-
-  background-color: #ffffff;
+  overflow:visible ;
+  color: rgb(111, 138, 125);
+  background-color: #334f3f82;
   position: sticky;
   top:0px;
 
@@ -57,7 +82,7 @@ li a:hover, .dropdown:hover .dropbtn {
 .mySlide {display: none ;} /*이미지 숨기는 용도*/
 
 .slideshow-container {
-  max-width: 400px;
+  max-width: 490px;
   position: relative;
   margin: auto;
 }
@@ -67,19 +92,19 @@ li a:hover, .dropdown:hover .dropbtn {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 20px;
-  margin-top: -24px;
+  padding: 16px;
+  margin-top: -22px;
   color: black;
   font-weight: bold;
   font-size: 20px;
   transition: 1.0s ease;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 3px 3px 0;
 }
 
-.right{right: 0; border-radius: 10px 0 0 10px;}
+.right{right: 0; border-radius: 3px 0 0 3px;}
 
 .left:hover, .right:hover{
-  background-color: aqua;
+  background-color: rgb(82, 109, 109);
 }
 
 .text{
